@@ -7,96 +7,96 @@
     <title>Currency Converter</title>
 </head>
 <body><!--Hello and welcome this is Group 10 of the course IT110, section CG1, presenting to you a concept application of the APIs-->
-    <header>
-        <h1>Currency Converter</h1> 
-    </header>
-    <!-- the converter itself -->
-    <div class="content">
-        <!-- this part needs improvements:
-        >following the image there must be an arrow in between the to process
-        >the flags need to be establish, make a js to find a .json for the flag images to cycle through their currency, 
-        >use this, curl -X GET "https://www.apicountries.com/countries"
-        >beautify the buttons and such  -->
-        <div class="converter-container">
-            <div class="converter">
-                <label>From: </label>
-                <select class="currency">
-                    <option id="from-currency" value="option">Select</option>
-                </select>
-                <input type="text">
-            </div>
+    <nav>
+        <ul>    
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#api">API</a></li>
+        </ul>
         
-            <div class="converter">    
-                <div class="to">
-                    <label>To: </label>
+    </nav> 
+        
+        <!-- group Portfolio -->
+        <div id="intro" class="intro">
+        <h1>WE ARE GROUP 10</h1>
+        <div class="group-portfolio">
+            <div class="portfolio">
+                <a href="" class="items">
+                    <img src="" alt="PicHere">
+                    <h4>NameHere</h4>
+                    <h6>ContributedOn</h6>
+                    <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="" class="items">
+                    <img src="" alt="PicHere">
+                    <h4>NameHere</h4>
+                    <h6>ContributedOn</h6>
+                    <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="" class="items">
+                    <img src="" alt="PicHere">
+                    <h4>NameHere</h4>
+                    <h6>ContributedOn</h6>
+                    <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="" class="items">
+                    <img src="" alt="PicHere">
+                    <h4>NameHere</h4>
+                    <h6>ContributedOn</h6>
+                    <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- the nav bar and about this project -->
+    <div id="about" class="about">
+        
+        <div class="about-content">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea magni cumque voluptatem maiores, sapiente, tenetur libero inventore, explicabo facere fuga quia accusamus? Blanditiis voluptatibus dignissimos labore dolores, officiis ratione. Suscipit.</p>
+        </div>
+        
+    </div>
+</div>
+</div>
+    <!-- <div id="api" class="api">
+        the converter itself 
+             this part needs improvements:
+            >following the image there must be an arrow in between the to process
+            >the flags need to be establish, make a js to find a .json for the flag images to cycle through their currency, 
+            >use this, curl -X GET "https://www.apicountries.com/countries"
+            >beautify the buttons and such 
+            <div class="converter-container">
+               <a href="">API MIDTERM PROJECT</a>
+                <div class="converter">
+                    <label>From: </label>
+                    <img class="FROM-country-img" id="FROM-country-img">
                     <select class="currency">
-                        <option id="to-currency" value="option">Select</option>
+                        <option id="FROM-currency" value="option">Select</option>
                     </select>
-                    <input type="text">
-                </div>  
+                    <input id="search" type="text">
+                </div>
+
+                <img src="https://img.icons8.com/?size=100&id=41IIpCq65ndW&format=png&color=000000" alt="">
+                
+                <div class="converter">    
+                    <div class="to">
+                        <label>To: </label>
+                        <img class="TO-country-img" id="TO-country-img">
+                        <select class="currency">
+                            <option id="TO-currency" value="option">Select</option>
+                        </select>
+                        <input type="text">
+                    </div>  
+                </div>
+                <div class="output" id="output">OUTPUT HERE</div>
             </div>
-
-        </div>
-            <!-- the nav bar and about this project -->
-            <div class="about">
-
-                <section>
-                    <h3>About this</h3>
-                </section>
-
-            </div>
-        </div>
-    </div>
-    <!-- group Portfolio -->
-    <h1>Meet our Team</h1>
-    <div class="group-portfolio">
-        <div class="portfolio">
-            <img src="" alt="PicHere">
-            <h4>NameHere</h4>
-            <h6>ContributedOn</h6>
-            <p>About me</p>
-            <a><ul>
-                <li><a src="">fb</a></li>
-                <li><a src="">git</a></li>
-                <li><a src="">extra</a></li>
-            </ul></a>
-        </div>
-        <div class="portfolio">
-            <img src="" alt="PicHere">
-            <h4>NameHere</h4>
-            <h6>ContributedOn</h6>
-            <p>About me</p>
-            <a><ul>
-                <li><a src="">fb</a></li>
-                <li><a src="">git</a></li>
-                <li><a src="">extra</a></li>
-            </ul></a>
-        </div>
-        <div class="portfolio">
-            <img src="" alt="PicHere">
-            <h4>NameHere</h4>
-            <h6>ContributedOn</h6>
-            <p>About me</p>
-            <a><ul>
-                <li><a src="">fb</a></li>
-                <li><a src="">git</a></li>
-                <li><a src="">extra</a></li>
-            </ul></a>
-        </div>
-        <div class="portfolio">
-            <img src="" alt="PicHere">
-            <h4>NameHere</h4>
-            <h6>ContributedOn</h6>
-            <p>About me</p>
-            <a><ul>
-                <li><a src="">fb</a></li>
-                <li><a src="">git</a></li>
-                <li><a src="">extra</a></li>
-            </ul></a>
-        </div>
-    </div>
-    <footer>
-        This is the footer bit
-    </footer>
+    </div> -->
 </body>
 </html>

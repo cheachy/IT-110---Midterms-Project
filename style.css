@@ -5,6 +5,9 @@
 }
 
 body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
     background-color: lightblue;
   background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%), 
                     linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%), 
@@ -15,64 +18,152 @@ body {
 h1{
     padding: 1% 1% 0 1%;
 }
-/* converter styleup */
-.content{
+
+/* navbar styleup */
+nav{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap:wrap;
-    padding: 15px;
-}
-.converter-container{
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 3px 0 rgba(0,0,0,0.2);
+
+    width: 100vw;
+    padding: 2rem;
+
     background-color: white;
-    border-radius: 10px;
-    width: 65vw;
-    height: 100vh;
-    margin: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+ 
 }
-/* about styleup */
-.about{
-    background: white;
-    border-radius: 10px;
-    width: 25vw;
-    height: 100vh;
-    margin: 1%;
-   
+nav a{
+    padding: 5px;
+    margin: 0 15px;
+    font-size: 15px;
+    
+    font-weight: bold;
+    text-decoration: none;
+    text-align: flex-end;
+    align-items: flex-end;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}       
+/* intro styleup*/
+.intro {
+    padding: 100px 0 0 0 ;
+    background-color: rgba(255, 0, 0, 0.05);
 }
 
 /* group portfolio styleup */
-
 .group-portfolio{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 2% 2% 0 2%;
+
+    gap: .5%;
+    padding: 1%;
+    
 }
 .portfolio{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 70vh;
-    width: 100vw;
-    margin-top: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 25%;
+    
+    display: flex;
+    
+    padding: 1%;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+    .group-portfolio{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .portfolio {
+        width: 95%;
+        height: 50vh;
+    }
+}
+/* contents under the cards */
+.items{
+    border: 3px black solid;
+    background-color: bisque;
+    
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    gap: 5px;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+.items img{
+    border: 2px black solid;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    padding: 5%;
+    max-height: 500px;
+    max-width: 500px;
+    margin: 5% 0 0 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items li{
+    list-style: none;
+    background-color: inherit;
+    display: inline;
+}
+@media (max-width: 850px) {
+    .items p{
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+/* about styleup */
+.about{
+    height: 100vh;
+}
+.about-content{
+    background-color: white;
+    height: 100vh;
+
+    border-radius: 25px;
+    margin: 2%;
+    padding: 4%;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* converter styleup */
+.api{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.converter-container{
+    background-color: white;
+    border-radius: 10px;
+    width: 85%;
+    height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-/* contents under the cards */
-.portfolio li{
-    list-style: none;
-    display: inline;
-}
-
-
-/* footer styleup */
-footer{
-    background-color: white;
-    height: 20vh;
 }
