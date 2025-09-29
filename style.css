@@ -149,8 +149,127 @@ nav ul {
     text-align: justify;
     text-justify: inter-word;
 }
+
+/* Modal Styles - Simplified */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 700px; /* Slightly narrower for better focus */
+    position: relative;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: none;
+}
+
+.close-modal:hover {
+    color: #ff0000;
+}
+
+.modal-header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.modal-image {
+    flex: 0 0 200px; /* Fixed width for image */
+}
+
+.modal-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-info {
+    flex: 1;
+}
+
+.modal-title {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.modal-subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.modal-body {
+    line-height: 1.6;
+}
+
+.modal-section {
+    margin-bottom: 20px;
+}
+
+.modal-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+/* Responsive Design for Modals */
+@media (max-width: 768px) {
+    .modal-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .modal-image {
+        flex: 0 0 auto;
+        margin: 0 auto 20px;
+        max-width: 200px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 20px;
+    }
+}
 /* converter styleup */
-.api{
+/* .api{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,4 +285,4 @@ nav ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+} */

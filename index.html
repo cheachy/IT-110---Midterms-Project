@@ -16,44 +16,239 @@
         
     </nav> 
         
-        <!-- group Portfolio -->
+        <!-- Group Portfolio -->
         <div id="intro" class="intro">
         <h1>WE ARE GROUP 10</h1>
         <div class="group-portfolio">
-            <div class="portfolio">
-                <a href="" class="items">
+            <!-- Charmie -->
+            <div class="portfolio" onclick="openModal('modal1')">
+                 <a onclick="openModal('modal1')" class="items">
                     <img src="" alt="PicHere">
                     <h4>NameHere</h4>
                     <h6>ContributedOn</h6>
                     <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
+                    <p>Click for more-></p>
                 </a>
             </div>
-            <div class="portfolio">
-                <a href="" class="items">
+            <!-- Jhan Paul -->
+            <div class="portfolio" onclick="openModal('modal2')">
+                 <a onclick="openModal('modal2')" class="items">
                     <img src="" alt="PicHere">
                     <h4>NameHere</h4>
                     <h6>ContributedOn</h6>
                     <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
+                    <p>Click for more-></p>
                 </a>
             </div>
-            <div class="portfolio">
-                <a href="" class="items">
+            <!-- Regie -->
+            <div class="portfolio" onclick="openModal('modal3')">
+                 <a onclick="openModal('modal3')" class="items">
                     <img src="" alt="PicHere">
                     <h4>NameHere</h4>
                     <h6>ContributedOn</h6>
                     <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
+                    <p>Click for more-></p>
                 </a>
             </div>
-            <div class="portfolio">
-                <a href="" class="items">
+            <!-- Psahmm -->
+            <div class="portfolio" onclick="openModal('modal4')">
+                 <a onclick="openModal('modal4')" class="items">
                     <img src="" alt="PicHere">
                     <h4>NameHere</h4>
                     <h6>ContributedOn</h6>
                     <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
+                    <p>Click for more-></p>
                 </a>
             </div>
         </div>
+        
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeModal('modal1')">&times;</button>
+        <div class="modal-header">
+            <!-- Profile Image -->
+            <div class="modal-image">
+                <img src="||Profile Image URL||" alt="John Doe">
+            </div>
+            <div class="modal-info">
+                <!-- Name and Role -->
+                <h2 class="modal-title">||Full Name||</h2>
+                <div class="modal-subtitle">||Role/Position||</div>
+                
+                <!-- Description -->
+                <div class="modal-section">
+                    <h3>About</h3>
+                    <p>||Personal description and background||</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-body">
+            <!-- Project Examples -->
+            <div class="modal-section">
+                <h3>Project Examples</h3>
+                <ul>
+                    <li>||Project example 1||</li>
+                    <li>||Project example 2||</li>
+                    <li>||Project example 3||</li>
+                </ul>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="modal-section">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p>Email: ||email@example.com||</p>
+                    <p>Phone: ||+1234567890||</p>
+                    <p>LinkedIn: ||linkedin.com/in/username||</p>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+<!-- Modal Structure - Simplified -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeModal('modal2')">&times;</button>
+        <div class="modal-header">
+            <!-- Profile Image -->
+            <div class="modal-image">
+                <img src="||Profile Image URL||" alt="John Doe">
+            </div>
+            <div class="modal-info">
+                <!-- Name and Role -->
+                <h2 class="modal-title">||Full Name||</h2>
+                <div class="modal-subtitle">||Role/Position||</div>
+                
+                <!-- Description -->
+                <div class="modal-section">
+                    <h3>About</h3>
+                    <p>||Personal description and background||</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-body">
+            <!-- Project Examples -->
+            <div class="modal-section">
+                <h3>Project Examples</h3>
+                <ul>
+                    <li>||Project example 1||</li>
+                    <li>||Project example 2||</li>
+                    <li>||Project example 3||</li>
+                </ul>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="modal-section">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p>Email: ||email@example.com||</p>
+                    <p>Phone: ||+1234567890||</p>
+                    <p>LinkedIn: ||linkedin.com/in/username||</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Repeat similar structure for modal2, modal3, modal4 -->
+ <!-- Modal Structure - Simplified -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeModal('modal3')">&times;</button>
+        <div class="modal-header">
+            <!-- Profile Image -->
+            <div class="modal-image">
+                <img src="||Profile Image URL||" alt="John Doe">
+            </div>
+            <div class="modal-info">
+                <!-- Name and Role -->
+                <h2 class="modal-title">||Full Name||</h2>
+                <div class="modal-subtitle">||Role/Position||</div>
+                
+                <!-- Description -->
+                <div class="modal-section">
+                    <h3>About</h3>
+                    <p>||Personal description and background||</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-body">
+            <!-- Project Examples -->
+            <div class="modal-section">
+                <h3>Project Examples</h3>
+                <ul>
+                    <li>||Project example 1||</li>
+                    <li>||Project example 2||</li>
+                    <li>||Project example 3||</li>
+                </ul>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="modal-section">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p>Email: ||email@example.com||</p>
+                    <p>Phone: ||+1234567890||</p>
+                    <p>LinkedIn: ||linkedin.com/in/username||</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Repeat similar structure for modal2, modal3, modal4 -->
+ <!-- Modal Structure - Simplified -->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeModal('modal4')">&times;</button>
+        <div class="modal-header">
+            <!-- Profile Image -->
+            <div class="modal-image">
+                <img src="||Profile Image URL||" alt="John Doe">
+            </div>
+            <div class="modal-info">
+                <!-- Name and Role -->
+                <h2 class="modal-title">||Full Name||</h2>
+                <div class="modal-subtitle">||Role/Position||</div>
+                
+                <!-- Description -->
+                <div class="modal-section">
+                    <h3>About</h3>
+                    <p>||Personal description and background||</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-body">
+            <!-- Project Examples -->
+            <div class="modal-section">
+                <h3>Project Examples</h3>
+                <ul>
+                    <li>||Project example 1||</li>
+                    <li>||Project example 2||</li>
+                    <li>||Project example 3||</li>
+                </ul>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="modal-section">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p>Email: ||email@example.com||</p>
+                    <p>Phone: ||+1234567890||</p>
+                    <p>LinkedIn: ||linkedin.com/in/username||</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Repeat similar structure for modal2, modal3, modal4 -->
+
     <!-- the nav bar and about this project -->
     <div id="about" class="about">
         
@@ -98,5 +293,6 @@
                 <div class="output" id="output">OUTPUT HERE</div>
             </div>
     </div> -->
+    <script src="script.js"></script>
 </body>
 </html>
