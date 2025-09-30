@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    background-color: lightblue;
+  background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                    radial-gradient(gray 2px, transparent 0);
+  background-size: 30px 30px, 30px 30px;
+}
+h1{
+    padding: 1% 1% 0 1%;
+}
+
+/* navbar styleup */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 3px 0 rgba(0,0,0,0.2);
+
+    width: 100vw;
+    padding: 2rem;
+
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+ 
+}
+nav a{
+    padding: 5px;
+    margin: 0 15px;
+    font-size: 15px;
+    
+    font-weight: bold;
+    text-decoration: none;
+    text-align: flex-end;
+    align-items: flex-end;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}       
+/* intro styleup*/
+.intro {
+    padding: 100px 0 0 0 ;
+    background-color: rgba(255, 0, 0, 0.05);
+}
+
+/* group portfolio styleup */
+.group-portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .5%;
+    padding: 1%;
+    
+}
+.portfolio{
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+    width: 25%;
+    
+    display: flex;
+    
+    padding: 1%;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+    .group-portfolio{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .portfolio {
+        width: 95%;
+        height: 50vh;
+    }
+}
+/* contents under the cards */
+.items{
+    border: 3px black solid;
+    background-color: bisque;
+    
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    gap: 5px;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+.items img{
+    border: 2px black solid;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    padding: 5%;
+    max-height: 500px;
+    max-width: 500px;
+    margin: 5% 0 0 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items li{
+    list-style: none;
+    background-color: inherit;
+    display: inline;
+}
+@media (max-width: 850px) {
+    .items p{
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+/* about styleup */
+.about{
+    height: 100vh;
+}
+.about-content{
+    background-color: white;
+    height: 100vh;
+
+    border-radius: 25px;
+    margin: 2%;
+    padding: 4%;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Modal Styles - Simplified */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 700px; /* Slightly narrower for better focus */
+    position: relative;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: none;
+}
+
+.close-modal:hover {
+    color: #ff0000;
+}
+
+.modal-header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.modal-image {
+    flex: 0 0 200px; /* Fixed width for image */
+}
+
+.modal-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-info {
+    flex: 1;
+}
+
+.modal-title {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.modal-subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.modal-body {
+    line-height: 1.6;
+}
+
+.modal-section {
+    margin-bottom: 20px;
+}
+
+.modal-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+/* Responsive Design for Modals */
+@media (max-width: 768px) {
+    .modal-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .modal-image {
+        flex: 0 0 auto;
+        margin: 0 auto 20px;
+        max-width: 200px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 20px;
+    }
+}
+/* converter styleup */
+/* .api{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.converter-container{
+    background-color: white;
+    border-radius: 10px;
+    width: 85%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
