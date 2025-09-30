@@ -1,0 +1,61 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: hsla(0, 0%, 0%, 0.05);
+    font-family: 'Poppins', sans-serif;
+}
+.currencyConverter, .currencyConversion {
+    width: 200px;
+    margin: 20px auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+input[type=number]{
+    padding: 10px;
+    font-size: 15px;
+    font-style: italic;
+    border-color:hsla(0, 0%, 0%, 0.25);
+    border-radius: 5px;
+}
+.currencyTo, .currencyFrom {
+    border: 2px solid hsla(0, 0%, 0%, 0.15);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+#From, #To {
+    font-size: 16px;
+    padding: 10px;
+}
+select {
+    border: 2px solid hsla(0, 0%, 0%, 0.15);
+}
+.convert {
+    padding: 20px;
+    width: 200px;
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    background-color: hsla(240, 100%, 72%, 0.50);
+    border: none;
+    border-radius: 8px;
+}
+.convert:hover {
+    background-color: hsla(240, 100%, 72%, 0.75);
+}
+.convert:active {
+    border: 2px solid hsla(0, 0%, 0%, 0.15);
+}
+.currencyConversion {
+    border: 2px solid hsla(0, 0%, 0%, 0.15);
+    align-items: center;
+    width: 200px;
+    border-radius: 5px;
+}

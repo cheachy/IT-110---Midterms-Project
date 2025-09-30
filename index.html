@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="currencyConverter">
+            <form class="currencyForm">
+                <input type="number" min="1" placeholder="Enter a number" id="numberInput">
+                <div class="currencyFrom">
+                    <label for="currencyFrom" id="From">From</label>
+                    <select id="currencyFrom">
+                        <option value="USD">USD</option>
+                        <option value="PHP">PHP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="CNY">CNY</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+                <div class="currencyTo">
+                    <label for="currencyTo" id="To">To</label>
+                    <select id="currencyTo">
+                        <option value="USD">USD</option>
+                        <option value="PHP">PHP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="CNY">CNY</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+                <button class="convert">Convert</button>
+            </form>
+        </div>
+        <div class="currencyConversion" style="display: none">
+            <p id="currencyResult"></p> 
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
