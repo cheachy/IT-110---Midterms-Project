@@ -6,293 +6,284 @@
     <link rel="stylesheet" href="style.css">
     <title>Currency Converter</title>
 </head>
-<body><!--Hello and welcome this is Group 10 of the course IT110, section CG1, presenting to you a concept application of the APIs-->
-    <nav>
-        <ul>    
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#api">API</a></li>
-        </ul>
-        
-    </nav> 
-        
-        <!-- Group Portfolio -->
-        <div id="intro" class="intro">
-        <h1>WE ARE GROUP 10</h1>
-        <div class="group-portfolio">
-            <!-- Charmie -->
-            <div class="portfolio" onclick="openModal('modal1')">
-                 <a onclick="openModal('modal1')" class="items">
-                    <img src="" alt="PicHere">
-                    <h4>NameHere</h4>
-                    <h6>ContributedOn</h6>
-                    <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
-                    <p>Click for more-></p>
-                </a>
-            </div>
-            <!-- Jhan Paul -->
-            <div class="portfolio" onclick="openModal('modal2')">
-                 <a onclick="openModal('modal2')" class="items">
-                    <img src="" alt="PicHere">
-                    <h4>NameHere</h4>
-                    <h6>ContributedOn</h6>
-                    <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
-                    <p>Click for more-></p>
-                </a>
-            </div>
-            <!-- Regie -->
-            <div class="portfolio" onclick="openModal('modal3')">
-                 <a onclick="openModal('modal3')" class="items">
-                    <img src="" alt="PicHere">
-                    <h4>NameHere</h4>
-                    <h6>ContributedOn</h6>
-                    <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
-                    <p>Click for more-></p>
-                </a>
-            </div>
-            <!-- Psahmm -->
-            <div class="portfolio" onclick="openModal('modal4')">
-                 <a onclick="openModal('modal4')" class="items">
-                    <img src="" alt="PicHere">
-                    <h4>NameHere</h4>
-                    <h6>ContributedOn</h6>
-                    <p>About me - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta nostrum culpa asperiores illo pariatur illum et a deserunt facilis? Vel amet commodi ipsum, iure delectus qui hic in obcaecati?</p>
-                    <p>Click for more-></p>
-                </a>
-            </div>
-        </div>
-        
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <button class="close-modal" onclick="closeModal('modal1')">&times;</button>
-        <div class="modal-header">
-            <!-- Profile Image -->
-            <div class="modal-image">
-                <img src="||Profile Image URL||" alt="John Doe">
-            </div>
-            <div class="modal-info">
-                <!-- Name and Role -->
-                <h2 class="modal-title">||Full Name||</h2>
-                <div class="modal-subtitle">||Role/Position||</div>
-                
-                <!-- Description -->
-                <div class="modal-section">
-                    <h3>About</h3>
-                    <p>||Personal description and background||</p>
+<body>
+    <header id="header">
+        <nav aria-label="navi">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#goal">Goal</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <section id="home" class="hero" aria-labelledby="intro-title">
+            <div class="container">
+                <div class="hero-grid">
+                    <figure class="our_pfp">
+                        <img src="assets/chami.jpg" id="portrait3" class="portrait" alt="Portrait of Chami">
+                        <img src="assets/jp.jpg" id="portrait1" class="portrait" alt="Portrait of Jhan Paul">
+                        <img src="assets/regie.jpg" id="portrait2" class="portrait" alt="Portrait of Regie">
+                        <img src="assets/psamm.jpg" id="portrait4" class="portrait" alt="Portrait of Psamm">
+                    </figure>
+                    <div class="intro-title">
+                        <h1>Hello, we are Group 10!</h1>
+                        <h3>This is our Midterms Project for IT 110 from Section CG1.</h3>
+                        <a class="btn" href="#api">Our Works</a>
+                    </div> 
                 </div>
             </div>
+        </section>
+        
+        <!-- goal section -->
+        <section id="goal" class="section" aria-labelledby="goal-title">
+            <div class="goal-body">
+                <h1>Our Goal</h1>
+                <p>To  create and innovate the the digital era in the region, the nation and beyond.</p>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <h1>About Us</h1>
+            <div class="group-portfolio">
+                <!-- Charmie -->
+                <div class="portfolio" onclick="openModal('modal1')">
+                    <a onclick="openModal('modal1')" class="items">
+                        <img src="assets/chami.jpg" alt="Portrait-Chami">
+                        <h4>Charmie</h4>
+                        <p>Head Developer</p>
+                        <h4>Contact Information</h4>
+                            <ul class="contacts">
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=38389&format=png&color=000000" alt="GitHub"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="Facebook"></a></li>
+                                <!-- <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8831&format=png&color=000000" alt="Instagram"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="x"></a></li> -->
+                            </ul>
+                    </a>
+                </div>
+                <!-- Jhan Paul -->
+                <div class="portfolio" onclick="openModal('modal2')">
+                     <a onclick="openModal('modal2')" class="items">
+                        <img src="assets/jp.jpg" alt="Portrait-JP">
+                        <h4>Jhan Paul</h4>
+                        <p>Group Portfolio Frontend</p>
+                        <h4>Contact Information</h4>
+                             <ul class="contacts">
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=38389&format=png&color=000000" alt="GitHub"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="Facebook"></a></li>
+                                <!-- <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8831&format=png&color=000000" alt="Instagram"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="x"></a></li> -->
+                            </ul>
+                        
+                    </a>
+                </div>
+                <!-- Regie -->
+                <div class="portfolio" onclick="openModal('modal3')">
+                     <a onclick="openModal('modal3')" class="items">
+                        <img src="assets/regie.jpg" alt="Portrait-Regie">
+                        <h4>Regie</h4>
+                        <p>API Frontend</p>
+                        <h4>Contact Information</h4>
+                        
+                            <ul class="contacts">
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=38389&format=png&color=000000" alt="GitHub"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="Facebook"></a></li>
+                                <!-- <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8831&format=png&color=000000" alt="Instagram"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="x"></a></li> -->
+                            </ul>
+
+                    </a>
+                </div>
+                <!-- Psahmm -->
+                <div class="portfolio" onclick="openModal('modal4')">
+                     <a onclick="openModal('modal4')" class="items">
+                        <img src="assets/psamm.jpg" alt="Portrait-Psahmm">
+                        <h4>Psahmm</h4>
+                        <p>Backend Developer</p>
+                        <h4>Contact Information</h4>
+                        
+                             <ul class="contacts">
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=38389&format=png&color=000000" alt="GitHub"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="Facebook"></a></li>
+                                <!-- <li> <a href=""><img src="https://img.icons8.com/?size=100&id=8831&format=png&color=000000" alt="Instagram"></a></li>
+                                <li> <a href=""><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="x"></a></li> -->
+                            </ul>
+
+                    </a>
+                </div>
         </div>
         
-        <div class="modal-body">
-            <!-- Project Examples -->
-            <div class="modal-section">
-                <h3>Project Examples</h3>
-                <ul>
-                    <li>||Project example 1||</li>
-                    <li>||Project example 2||</li>
-                    <li>||Project example 3||</li>
-                </ul>
+        <!-- modals -->
+            <!-- chami -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="closeModal('modal1')">&times;</button>
+                    <div class="modal-header">
+                        <!-- Profile Image : Charmi-->
+                        <div class="modal-image">
+                            <img src="assets/chami.jpg" alt="Portrait-Chami">
+                        </div>
+                        <div class="modal-info">
+                            <!-- Name and Role -->
+                            <h2 class="modal-title">Charmi Rafols</h2>
+                            <div class="modal-subtitle">Head Developer| Backend Expert | Group 10 leader<!---Charmi, ikaw na change ani, it may be tooooo exsessive -->></div>
+
+                            <!-- Description -->
+                            <div class="modal-section">
+                                <h3>About</h3>
+                                <p>||Personal description and background||</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Project Examples -->
+                        <div class="modal-section">
+                            <h3>Project Examples</h3>
+                            <ul>
+                                <li>||Project example 1||</li>
+                                <li>||Project example 2||</li>
+                                <li>||Project example 3||</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- jp -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="closeModal('modal2')">&times;</button>
+                    <div class="modal-header">
+                        <!-- Profile Image : Jhan Paul -->
+                        <div class="modal-image">
+                            <img src="assets/jp.jpeg" alt="Portrait-JP">
+                        </div>
+                        <div class="modal-info">
+                            <!-- Name and Role -->
+                            <h2 class="modal-title">Jhan Paul Daguio</h2>
+                            <div class="modal-subtitle">Frontend Developer | Group 10 Member</div>
+
+                            <!-- Description -->
+                            <div class="modal-section">
+                                <h3>About</h3>
+                                <p>||Personal description and background||</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Project Examples -->
+                        <div class="modal-section">
+                            <h3>Project Examples</h3>
+                            <ul>
+                                <li>||Project example 1||</li>
+                                <li>||Project example 2||</li>
+                                <li>||Project example 3||</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <!-- regie -->
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="closeModal('modal3')">&times;</button>
+                    <div class="modal-header">
+                        <!-- Profile Image : Regie-->
+                        <div class="modal-image">
+                            <img src="assets/regie.jpg" alt="Portrait-Regie">
+                        </div>
+                        <div class="modal-info">
+                            <!-- Name and Role -->
+                            <h2 class="modal-title">Regie Baquiran</h2>
+                            <div class="modal-subtitle">Frontend Developer | Group 10 Member</div>
+
+                            <!-- Description -->
+                            <div class="modal-section">
+                                <h3>About</h3>
+                                <p>||Personal description and background||</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Project Examples -->
+                        <div class="modal-section">
+                            <h3>Project Examples</h3>
+                            <ul>
+                                <li>||Project example 1||</li>
+                                <li>||Project example 2||</li>
+                                <li>||Project example 3||</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- psamm -->
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="closeModal('modal4')">&times;</button>
+                    <div class="modal-header">
+                        <!-- Profile Image : Psamm-->
+                        <div class="modal-image">
+                            <img src="assets/psamm.jpg" alt="Portrait-Psahmm">
+                        </div>
+                        <div class="modal-info">
+                            <!-- Name and Role -->
+                            <h2 class="modal-title">Psahmm Gabriel Junio</h2>
+                            <div class="modal-subtitle">Backend Developer | Group 10 Member</div>
+
+                            <!-- Description -->
+                            <div class="modal-section">
+                                <h3>About</h3>
+                                <p>||Personal description and background||</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Project Examples -->
+                        <div class="modal-section">
+                            <h3>Project Examples</h3>
+                            <ul>
+                                <li>||Project example 1||</li>
+                                <li>||Project example 2||</li>
+                                <li>||Project example 3||</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- project section -->
+        <section id="projects" class="section" aria-labelledby="project-title">
+            <div class="project-content">
+            <h2>Currency Converter Project</h2>
+            <p>This project is done in basic HTML, CSS, and JavaScript.</p>
+            <p>We use the |Name here|API to integrate the currency and country for the converter and basic conversion function in JavaScript.</p>
+
+            <ul>
+                <h4>Features:</h4>
+                <li><p>Real-time Conversion</p></li>
+                <li><p>Multiple Currency Support</p></li>
+                <li><p>Exchange Rate API Integration</p></li>
+            </ul>
             
-            <!-- Contact Information -->
-            <div class="modal-section">
-                <h3>Contact Information</h3>
-                <div class="contact-info">
-                    <p>Email: ||email@example.com||</p>
-                    <p>Phone: ||+1234567890||</p>
-                    <p>LinkedIn: ||linkedin.com/in/username||</p>
-                </div>
+            <a class="btn" href="#api">Our Works</a>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Structure - Simplified -->
-<div id="modal2" class="modal">
-    <div class="modal-content">
-        <button class="close-modal" onclick="closeModal('modal2')">&times;</button>
-        <div class="modal-header">
-            <!-- Profile Image -->
-            <div class="modal-image">
-                <img src="||Profile Image URL||" alt="John Doe">
-            </div>
-            <div class="modal-info">
-                <!-- Name and Role -->
-                <h2 class="modal-title">||Full Name||</h2>
-                <div class="modal-subtitle">||Role/Position||</div>
-                
-                <!-- Description -->
-                <div class="modal-section">
-                    <h3>About</h3>
-                    <p>||Personal description and background||</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal-body">
-            <!-- Project Examples -->
-            <div class="modal-section">
-                <h3>Project Examples</h3>
-                <ul>
-                    <li>||Project example 1||</li>
-                    <li>||Project example 2||</li>
-                    <li>||Project example 3||</li>
-                </ul>
-            </div>
-            
-            <!-- Contact Information -->
-            <div class="modal-section">
-                <h3>Contact Information</h3>
-                <div class="contact-info">
-                    <p>Email: ||email@example.com||</p>
-                    <p>Phone: ||+1234567890||</p>
-                    <p>LinkedIn: ||linkedin.com/in/username||</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Repeat similar structure for modal2, modal3, modal4 -->
- <!-- Modal Structure - Simplified -->
-<div id="modal3" class="modal">
-    <div class="modal-content">
-        <button class="close-modal" onclick="closeModal('modal3')">&times;</button>
-        <div class="modal-header">
-            <!-- Profile Image -->
-            <div class="modal-image">
-                <img src="||Profile Image URL||" alt="John Doe">
-            </div>
-            <div class="modal-info">
-                <!-- Name and Role -->
-                <h2 class="modal-title">||Full Name||</h2>
-                <div class="modal-subtitle">||Role/Position||</div>
-                
-                <!-- Description -->
-                <div class="modal-section">
-                    <h3>About</h3>
-                    <p>||Personal description and background||</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal-body">
-            <!-- Project Examples -->
-            <div class="modal-section">
-                <h3>Project Examples</h3>
-                <ul>
-                    <li>||Project example 1||</li>
-                    <li>||Project example 2||</li>
-                    <li>||Project example 3||</li>
-                </ul>
-            </div>
-            
-            <!-- Contact Information -->
-            <div class="modal-section">
-                <h3>Contact Information</h3>
-                <div class="contact-info">
-                    <p>Email: ||email@example.com||</p>
-                    <p>Phone: ||+1234567890||</p>
-                    <p>LinkedIn: ||linkedin.com/in/username||</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Repeat similar structure for modal2, modal3, modal4 -->
- <!-- Modal Structure - Simplified -->
-<div id="modal4" class="modal">
-    <div class="modal-content">
-        <button class="close-modal" onclick="closeModal('modal4')">&times;</button>
-        <div class="modal-header">
-            <!-- Profile Image -->
-            <div class="modal-image">
-                <img src="||Profile Image URL||" alt="John Doe">
-            </div>
-            <div class="modal-info">
-                <!-- Name and Role -->
-                <h2 class="modal-title">||Full Name||</h2>
-                <div class="modal-subtitle">||Role/Position||</div>
-                
-                <!-- Description -->
-                <div class="modal-section">
-                    <h3>About</h3>
-                    <p>||Personal description and background||</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal-body">
-            <!-- Project Examples -->
-            <div class="modal-section">
-                <h3>Project Examples</h3>
-                <ul>
-                    <li>||Project example 1||</li>
-                    <li>||Project example 2||</li>
-                    <li>||Project example 3||</li>
-                </ul>
-            </div>
-            
-            <!-- Contact Information -->
-            <div class="modal-section">
-                <h3>Contact Information</h3>
-                <div class="contact-info">
-                    <p>Email: ||email@example.com||</p>
-                    <p>Phone: ||+1234567890||</p>
-                    <p>LinkedIn: ||linkedin.com/in/username||</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Repeat similar structure for modal2, modal3, modal4 -->
-
-    <!-- the nav bar and about this project -->
-    <div id="about" class="about">
-        
-        <div class="about-content">
-            <h3>About</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea magni cumque voluptatem maiores, sapiente, tenetur libero inventore, explicabo facere fuga quia accusamus? Blanditiis voluptatibus dignissimos labore dolores, officiis ratione. Suscipit.</p>
-        </div>
-        
-    </div>
-</div>
-</div>
-    <!-- <div id="api" class="api">
-        the converter itself 
-             this part needs improvements:
-            >following the image there must be an arrow in between the to process
-            >the flags need to be establish, make a js to find a .json for the flag images to cycle through their currency, 
-            >use this, curl -X GET "https://www.apicountries.com/countries"
-            >beautify the buttons and such 
-            <div class="converter-container">
-               <a href="">API MIDTERM PROJECT</a>
-                <div class="converter">
-                    <label>From: </label>
-                    <img class="FROM-country-img" id="FROM-country-img">
-                    <select class="currency">
-                        <option id="FROM-currency" value="option">Select</option>
-                    </select>
-                    <input id="search" type="text">
-                </div>
-
-                <img src="https://img.icons8.com/?size=100&id=41IIpCq65ndW&format=png&color=000000" alt="">
-                
-                <div class="converter">    
-                    <div class="to">
-                        <label>To: </label>
-                        <img class="TO-country-img" id="TO-country-img">
-                        <select class="currency">
-                            <option id="TO-currency" value="option">Select</option>
-                        </select>
-                        <input type="text">
-                    </div>  
-                </div>
-                <div class="output" id="output">OUTPUT HERE</div>
-            </div>
-    </div> -->
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
