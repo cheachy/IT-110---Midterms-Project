@@ -127,7 +127,7 @@ header {
 #about{
     padding: 2% 0 0 0;
     text-align: center;
-    background: var(--brand);
+   
 }
 
 .group-portfolio{
@@ -137,18 +137,18 @@ header {
     align-items: stretch;
     gap: 1%;
     padding: 1%;
-    flex-wrap: nowrap; /* ensures everything stays in one line */
+    flex-wrap: nowrap; 
     overflow-x: auto; 
     
 }
 .portfolio{
     background-color: var(--muted);
-    flex: 0 0 20%; /* fixed width so multiple fit in a row */
+    flex: 0 0 20%; 
     height: 70vh;
-    min-width: 250px; /* prevents being too small */
+    min-width: 250px; 
     
     display: flex;
-    flex-direction: column; /* everything stacked vertically */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     
