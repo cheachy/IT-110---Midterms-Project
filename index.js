@@ -35,6 +35,34 @@ clearHistoryBtn.addEventListener("click", () => {
 
 updateHistory();
 
+function toAdd(){
+  addOperator('+');
+}
+
+function toSubstract(){
+  addOperator('-');
+}
+
+function toMultiply(){
+  addOperator('*');
+}
+
+function toDivide(){
+  addOperator('/');
+}
+
+function addOperator(operator){
+  const lastChar = userInput.value.slice(-1);
+  const operators = ["+", "-", "*", "/"];
+
+  if(operators.includes(lastChar)){
+    userInput.value = userInput.value.slice(0, -1) + operator;
+  }
+  else{
+    userInput.value += operator;
+  }
+}
+
 function clearDisplay() {
   userInput.value = "";
   valueInput.value = "";
@@ -54,8 +82,22 @@ function appendToUserInput(value) {
 }
 
 function calculateResult() {
-  valueInput.value = userInput.value;
-  convertBtn.click();
+
+  let expression = userInput.value;
+
+  try{
+    let resultValue = eval(expression);
+
+    resultValue = parseFloat(resultValue.toFixed(2));
+
+    userInput.value = resultValue;
+    valueInput.value = userInput.value;
+  } 
+  catch(error){
+    userInput.value = "Error";
+  }
+
+  
 }
 
 function swap(){
@@ -64,7 +106,7 @@ function swap(){
   currencyFrom.value = currencyTo.value;
   currencyTo.value = temp;
 
-  convertBtn.click();
+
 }
 
 valueInput.addEventListener("input", () => {
@@ -107,7 +149,7 @@ convertBtn.addEventListener("click", async (e) => {
 
     const entry = `${amount} ${from} → ${convertedAmount} ${to} \n Exchange rate: 1 ${from} = ${rate.toFixed(2)} ${to}`;
     history.unshift(entry);
-    if (history.length > 5) history.pop();
+    if (history.length > 10) history.pop();
     localStorage.setItem("conversionHistory", JSON.stringify(history));
     updateHistory();
   

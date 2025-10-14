@@ -21,7 +21,7 @@ input::-webkit-inner-spin-button {
 }
 #keys {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     gap: 5px;
 }
 
