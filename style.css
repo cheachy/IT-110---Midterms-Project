@@ -74,7 +74,7 @@ header {
     gap: var(--space-2);
     margin: 0;
     background-color: var(--brand);
-    padding: 65px;
+    padding: 50px;
 }
 
 .portrait {
@@ -95,7 +95,7 @@ header {
     font-weight: bold;
     font-style: italic;
     text-align: center;
-
+    bottom: 0;
 
 }
 
@@ -119,6 +119,8 @@ header {
 /* goal area */
 
 .goal-body{
+    margin: 5%;
+
     text-align: center;
 }
 
@@ -137,15 +139,15 @@ header {
     align-items: stretch;
     gap: 1%;
     padding: 1%;
-    flex-wrap: nowrap; 
+    /* flex-wrap: nowrap;  */
     overflow-x: auto; 
-    
+    flex-wrap: wrap;
 }
 .portfolio{
     background-color: var(--muted);
     flex: 0 0 20%; 
-    height: 70vh;
-    min-width: 250px; 
+    height: inherit;
+    width: 25%; 
     
     display: flex;
     flex-direction: column; 
@@ -160,15 +162,31 @@ header {
 .portfolio:hover {
     transform: translateY(-5px);
 }
-
-@media (max-width: 850px) {
-    .group-portfolio{
-        flex-direction: column;
-        gap: 20px;
+/* @media (max-width: 850px) {
+    .group-portfolio {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
     }
     .portfolio {
-        width: 95%;
-        height: 50vh;
+        flex: 0 0 80%;
+        height: auto;
+    }
+} */
+
+@media (max-width: 850px) {
+    .group-portfolio {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50vh);
+        gap: 20px;
+    }
+}
+
+/* Mobile - single column */
+@media (max-width: 450px) {
+    .group-portfolio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 100vh);
+        gap: 20px;
     }
 }
 .items {
@@ -211,16 +229,6 @@ header {
     width: 30px;
 }
 
-@media (max-width: 850px) {
-    .group-portfolio {
-        overflow-x: scroll;
-        flex-wrap: nowrap;
-    }
-    .portfolio {
-        flex: 0 0 80%;
-        height: auto;
-    }
-}
 /* modal styling */
 
 .modal {
@@ -308,8 +316,19 @@ header {
 .modal-section {
     margin-bottom: 20px;
 }
+.modal-section p{
+    text-align: justify;
+    justify-content: center;
+    
+}
+.modal-section ul{
+    padding: 0;;
+}
 .modal-section li{
     list-style: none;
+    justify-content: center;
+    display: inline;
+    margin: 2%;
 }
 
 .modal-section h3 {
