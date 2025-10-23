@@ -118,14 +118,28 @@ header {
     margin-bottom: 30px;
 }
 
-.intro-title h3 {
-    margin-bottom: 20px;
+.intro-title p {
+    margin-bottom: 25px;
 }
 
 .intro-title .btn {
     margin-bottom: 2%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.3);
+    transition: transform 0.2s ease;
+
+    &:hover{
+        box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
+        transform: translateX(-3px) translateY(-3px);
+
+    }
 }
 
+.portrait:hover{
+    --rand: random(-1deg,1deg);
+    transform: rotate(var(--rand));
+    transition: ease-in 300ms;
+}
 /* goal area */
 
 .goal-body{
@@ -167,7 +181,7 @@ header {
 /* group portfolio styling */
 
 #about{
-    padding: 2% 0 0 0;
+    padding: 0 0 0 0;
     text-align: center;
     margin-top: 10%;
    
@@ -287,7 +301,7 @@ header {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: var(--muted);
     margin: 5% auto;
     padding: 30px;
     border-radius: 15px;
@@ -377,7 +391,7 @@ header {
 .modal-section h3 {
     color: #333;
     margin-bottom: 10px;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid var(--brand);
     padding-bottom: 5px;
     font-size: 1.2em;
 }
@@ -418,11 +432,11 @@ header {
     background-image: url(assets/top-view-coins-paper-money-laptop.jpg);
     border-radius: 50px;
     color: var(--muted);
-    padding: 3%;
+    padding: 0% 3% 3% 3%;
     box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
     background-size: cover;
-    background-color: rgba(51, 44, 44, 0.75); /* Black overlay with 50% opacity */
-    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.75); /* Black overlay with 50% opacity */
+    background-blend-mode: soft-light;
 }
 
 .project-content p {
@@ -440,6 +454,13 @@ header {
 .project-content .btn {
     text-align: center;
     display: block;
+    box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.3);
+    transition: transform 0.2s ease;
+    &:hover{
+        box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
+        transform: translateX(-3px) translateY(-3px);
+
+    }
 }
 
 .contact-container {
@@ -456,10 +477,9 @@ header {
 .doc-contact{
     background-color: var(--brand);
     padding: 5%;
-    max-width: 250px;
+    width: 250px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
-    /* my contributions */
     transition: transform 0.2s ease;
     opacity: 0.9;
     &:hover{
@@ -467,11 +487,20 @@ header {
         transform: translateY(-5px);
         box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.7);
         opacity: 1;
+        background-color: var(--panel);
+        color: var(--brand)
     }
-    /* ends here -----------DELETE RANING COMMENTS */
+}
+
+.doc-contact{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
     
-
 footer {
-    margin: 10%;
+    margin: 10% 10% 2% 10%;
+    text-align: center;
+    color: var(--text);
+    opacity: .5;
 }
