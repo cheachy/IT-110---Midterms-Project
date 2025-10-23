@@ -429,7 +429,6 @@ header {
 }
 
 .project-content p {
-    max-width: var(--maxw);
     text-align: justify;
     line-height: var(--space-4);
     text-indent: 5%;
@@ -437,10 +436,35 @@ header {
 }
 
 .project-content ul {
-    text-align: justify;
-    line-height: 1.5em;
     font-size: 20px;
+    line-height: 2.5em;
+    padding-bottom: 5px;
 }
+.project-content .btn {
+    text-align: center;
+    display: block;
+}
+
+.contact-container {
+    display: flex;        
+    justify-content: space-between; 
+    gap: 100px;
+    margin-top: 5%;            
+}
+
+.contact-container h3 {
+    text-align: center;
+}
+
+.doc-contact{
+    background-color: var(--brand);
+    padding: 5%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
+}
+    
+
 footer {
     margin: 10%;
 }
