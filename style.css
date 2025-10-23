@@ -126,11 +126,6 @@ header {
     margin-bottom: 2%;
 }
 
-.portrait:hover{
-    --rand: random(-1deg,1deg);
-    transform: rotate(var(--rand));
-    transition: ease-in 300ms;
-}
 /* goal area */
 
 .goal-body{
@@ -204,9 +199,11 @@ header {
     border-radius: 10px;
     box-sizing: border-box;
     transition: transform 0.2s ease;
+    box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.3);
 }
 .portfolio:hover {
     transform: translateY(-5px);
+    box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
 }
 /* @media (max-width: 850px) {
     .group-portfolio {
@@ -462,6 +459,16 @@ header {
     max-width: 250px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
+    /* my contributions */
+    transition: transform 0.2s ease;
+    opacity: 0.9;
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-5px);
+        box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.7);
+        opacity: 1;
+    }
+    /* ends here -----------DELETE RANING COMMENTS */
 }
     
 
