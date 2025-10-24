@@ -159,7 +159,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--brand);
-    height: 500px; /* Fixed height of 300px */
+    height: 500px; 
     min-height: 70vh;
     box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
     margin-top: 10%;
@@ -194,7 +194,6 @@ header {
     align-items: stretch;
     gap: 1%;
     padding: 1%;
-    /* flex-wrap: nowrap;  */
     overflow-x: auto; 
     flex-wrap: wrap;
 }
@@ -219,39 +218,16 @@ header {
     transform: translateY(-5px);
     box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
 }
-/* @media (max-width: 850px) {
-    .group-portfolio {
-        overflow-x: scroll;
-        flex-wrap: nowrap;
-    }
-    .portfolio {
-        flex: 0 0 80%;
-        height: auto;
-    }
-} */
 
-@media (max-width: 850px) {
-    .group-portfolio {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 50vh);
-        gap: 20px;
-    }
-}
 
-/* Mobile - single column */
-@media (max-width: 450px) {
-    .group-portfolio {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 100vh);
-        gap: 20px;
-    }
-}
+
+
 .items {
-    display: flex;              /* vertical flow */
+    display: flex;              
     flex-direction: column;
-    align-items: center;        /* center horizontally */
-    width: 100%;                /* allow children to use full card width */
-    text-align: center;         /* center headings/text */
+    align-items: center;       
+    width: 100%;                
+    text-align: center;         
     gap: 8px;
     box-sizing: border-box;
 }
@@ -260,7 +236,7 @@ header {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    display: block;    /* avoid inline spacing issues */
+    display: block;    
     margin: 8px 0 0 0;
     flex-shrink: 0;
 }
@@ -271,7 +247,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    margin-top: auto; /* pushes it to the bottom if space allows */
+    margin-top: auto; 
     padding: 0;
     width: 100%;
 }
@@ -306,7 +282,7 @@ header {
     padding: 30px;
     border-radius: 15px;
     width: 80%;
-    max-width: 700px; /* Slightly narrower for better focus */
+    max-width: 700px; 
     position: relative;
     animation: modalSlideIn 0.3s ease;
 }
@@ -339,7 +315,7 @@ header {
 }
 
 .modal-image {
-    flex: 0 0 200px; /* Fixed width for image */
+    flex: 0 0 200px; 
 }
 
 .modal-image img {
@@ -435,7 +411,7 @@ header {
     padding: 0% 3% 3% 3%;
     box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.5);
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.75); /* Black overlay with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.75); 
     background-blend-mode: soft-light;
 }
 
